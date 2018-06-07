@@ -1,20 +1,21 @@
 {
-    "name": "clase2integrar",
-    "description": "",
-    "main": "",
-    "authors": [
-        "darl4real <darl4real@hotmail.com>"
-    ],
-    "license": "MIT",
-    "homepage": "https://github.com/darl4real/travelAgency",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "bootstrap": "^4.1.1"
-    }
+  "name": "clase2integrar",
+  "description": "",
+  "main": "",
+  "authors": [
+    "darl4real <darl4real@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/darl4real/travelAgency",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1"
+  }
 }

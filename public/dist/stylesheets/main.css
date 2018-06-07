@@ -51,6 +51,17 @@
     margin-top: 20px;
 }
 
+.myplane9 {
+    background: url("/images/myplane5.jpg")no-repeat center top;
+    background-position: center center;
+    text-align: center;
+    min-height: 350px;
+    width: 100%;
+    background-size: cover;
+    margin: 15px;
+    margin-top: 20px;
+}
+
 .About {
     padding-top: 20px;
 }
@@ -75,7 +86,7 @@
 }
 
 
-/*formulario*/
+/*form*/
 
 form {
     margin: 0 auto;

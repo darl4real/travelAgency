@@ -20,11 +20,12 @@ let expressSessions = require('express-session');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+let admin = require('./routes/admin');
 var login = require('./routes/login');
 var register = require('./routes/register');
 const hbsEmail = require('nodemailer-express-handlebars');
-
-
+let integration = require('./routes/integration');
+let regeneration = require('./routes/regeneration');
 
 
 
@@ -40,7 +41,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 hbs.registerPartials('${_dirname}/views/partials');
 
-//Getión de sesiones.
+//Gestión de sesiones.
 app.use(expressSessions({
     secret: 'GeekshubsAcademy',
     name: 'SesionGeek',
@@ -71,9 +72,12 @@ app.use('/components', express.static(`${__dirname}/public/components`));
 app.use('/', index);
 
 app.use('/users', users);
+app.use('/admin', admin);
 
 app.use('/login', login);
 app.use('/register', register);
+app.use('/integration', integration);
+app.use('/regeneration', regeneration);
 
 
 

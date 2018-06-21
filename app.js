@@ -22,6 +22,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var login = require('./routes/login');
 var register = require('./routes/register');
+const hbsEmail = require('nodemailer-express-handlebars');
 
 
 

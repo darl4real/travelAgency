@@ -14,10 +14,15 @@ var hbs = require('hbs');
 
 var hbsutils = require('hbs-utils')(hbs);
 
-
+let flash = require('connect-flash');
+//let loginFlash = require('./routes/login-flash');
+let expressSessions = require('express-session');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var login = require('./routes/login');
+var register = require('./routes/register');
+
 
 
 
@@ -34,7 +39,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 hbs.registerPartials('${_dirname}/views/partials');
 
+//Getión de sesiones.
+app.use(expressSessions({
+    secret: 'GeekshubsAcademy',
+    name: 'SesionGeek',
+    resave: true,
+    saveUninitialized: true
+}));
 
+app.use(flash());
 
 // uncomment after placing your favicon in /public
 
@@ -50,13 +63,16 @@ app.use(bodyParser.urlencoded({
 
 app.use(cookieParser());
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public/')));
 
-app.use('./components', express.static(`${__dirname}/public/components`));
+app.use('/components', express.static(`${__dirname}/public/components`));
 
 app.use('/', index);
 
 app.use('/users', users);
+
+app.use('/login', login);
+app.use('/register', register);
 
 
 
@@ -93,7 +109,6 @@ app.use(function(err, req, res, next) {
     res.render('error');
 
 });
-
 
 
 module.exports = app;

@@ -10,9 +10,11 @@
     "dependencies": {
         "body-parser": "~1.18.2",
         "concurrently": "^3.5.1",
+        "connect-flash": "^0.1.1",
         "cookie-parser": "~1.4.3",
         "debug": "~2.6.9",
         "express": "~4.15.5",
+        "express-session": "^1.15.6",
         "gulp": "^3.9.1",
         "gulp-clean-css": "^3.9.4",
         "gulp-concat": "^2.6.1",
@@ -20,7 +22,10 @@
         "gulp-uglify": "^3.0.0",
         "hbs": "~4.0.1",
         "hbs-utils": "0.0.4",
+        "live-server": "^1.2.0",
         "morgan": "~1.9.0",
+        "mysql": "^2.15.0",
+        "mysql2": "^1.5.3",
         "nodemon": "^1.17.5",
         "serve-favicon": "~2.4.5"
     }

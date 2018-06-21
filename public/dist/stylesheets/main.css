@@ -107,6 +107,30 @@ form {
 /*fin form*/
 
 .col {
-    background-color: black!important;
+    background-color: darkslategray;
     text-align: center;
+}
+
+.custom-form-container {
+    body {
+        /* Workaround for some mobile browsers */
+        min-height: 100%;
+    }
+    .custom-form-container {
+        height: 100vh;
+        /* The Magic */
+        background-size: cover;
+        background-image: url("/images/myplane30.jpg");
+    }
+    label {
+        color: #fff;
+    }
+    .custom-form-container {
+        padding: 30px 60px;
+    }
+    .form-horizontal,
+    .form-group,
+    {
+        background: darkslategray;
+    }
 }

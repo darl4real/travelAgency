@@ -19,11 +19,24 @@ class UserModel {
         })
     }
     findMail(email, cb) {
-
+        if (!conn) return cb("No se ha podido crear la conexión");
+        const SQL = "SELECT * FROM users WHERE email LIKE '%" + email + "%';";
+        conn.query(SQL, (error, rows) => {
+            if (error) return cb(error);
+            else return cb(rows);
+        })
     }
 
-    register(userName, email, pass, cb) {
 
+
+    register(username, email, password, fullname, cb) {
+        if (!conn) return cb("No se ha podido crear la conexión");
+        const SQL = `INSERT INTO users (username, password, email, fullname) values
+        ('${username}', '${password}','${email}','${fullname}');`;
+        conn.query(SQL, (error, rows) => {
+            if (error) return cb(error);
+            else return cb(rows);
+        })
     }
 
 }

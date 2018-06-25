@@ -82,5 +82,31 @@ class registerController extends Controller
         }
 
     }
+
+    register() {
+        // let a = this.req.body.username; 
+        //let b = password;
+        // let userModel = new UserModel();
+        //usermodel.findUser
+        //usermodel.findEmail
+        //usermodel.register(fullname, username, email, password, (info)=>{
+
+        //})
+
+        let username = this.req.body.username;
+        let password = this.req.body.password;
+        let fullName = this.req.body.fullName;
+        let email = this.req.body.email;
+        let userModel = new UserModel();
+        // userModel.findUser
+        console.log('Usuario ->' + fullName);
+
+        userModel.register(username, email, password, fullName, (info) => {
+            console.log(info)
+        })
+
+
+        this.res.redirect('/login');
+    }
 }
 module.exports = registerController;

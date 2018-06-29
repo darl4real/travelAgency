@@ -1,6 +1,5 @@
 <form class="custom-form-container needs-validation" method="post" novalidate">
-<form class="form-horizontal">
-   <form class="form-horizontal">
+    
     <div class = "form-group">
         <label for="inputfullname" class="control-label col-xs-2">full name</label>
         <div class = "col-xs-10">
@@ -40,4 +39,8 @@
             <button type="submit" class="btn btn-primary">Register</button>
         </div>
     </div>
+    {{#if error}}
+        <div class="error">{{error}}</div>
+    {{/if}}
 </form>
+    

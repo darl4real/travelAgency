@@ -1,0 +1,8 @@
+<h1>Página activación</h1>
+{{#if mensaje}}
+    <h2>Upsss {{mensaje}}</h2>
+{{/if}}
+{{#unless mensaje}}
+    <h2>Tu cuenta ya se encuentra activa</h2>
+    <a href="http://localhost:3005/login">Login</a>
+{{/unless}}

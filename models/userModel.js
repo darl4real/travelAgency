@@ -39,13 +39,35 @@ class usersModels {
     insertUser(data) {
         return new Promise((resolve, reject) => {
             if (!Conn) return reject("No existe conexión");
-            let SQL = `INSERT INTO users (fullname ,username,email,password,hash) values ('${data.fullName}','${data.username}', '${data.email}','${data.password}','${data.hash}');`;
+            let SQL = `INSERT INTO users (username,email,pass,hash) values ('${data.username}', '${data.email}','${data.password}','${data.hash}');`;
             Conn.query(SQL, (error, rows) => {
                 if (error) return reject(error);
                 else return resolve(rows);
             })
         })
     }
+
+    getUserByHash(hash) {
+        return new Promise((resolve, reject) => {
+            if (!Conn) return reject('No existe conexión');
+            let SQL = `SELECT * FROM users WHERE hash = '${hash}';`;
+            Conn.query(SQL, (error, rows) => {
+                if (error) return reject(error);
+                else return resolve(rows);
+            })
+        })
+    };
+
+    setActiveUser(hash) {
+        return new Promise((resolve, reject) => {
+            if (!Conn) return reject('No existe conexión');
+            let SQL = `UPDATE users set active=1 , hash='' where hash='${hash}';`;
+            Conn.query(SQL, (error, rows) => {
+                if (error) return reject(error);
+                else return resolve(rows);
+            })
+        })
+    };
 
 
 

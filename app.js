@@ -26,7 +26,7 @@ var register = require('./routes/register');
 const hbsEmail = require('nodemailer-express-handlebars');
 let integration = require('./routes/integration');
 let regeneration = require('./routes/regeneration');
-
+var multer = require('./routes/multer');
 
 
 var app = express();
@@ -78,6 +78,7 @@ app.use('/login', login);
 app.use('/register', register);
 app.use('/integration', integration);
 app.use('/regeneration', regeneration);
+app.use('/multer', multer);
 
 
 

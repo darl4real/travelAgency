@@ -1,5 +1,4 @@
 const Controller = require('./controller');
-
 const UserModel = require('../models/users');
 class loginController extends Controller
 
@@ -16,9 +15,9 @@ class loginController extends Controller
 
     {
 
-        let username = this.req.body.uname;
+        let username = this.req.body.username;
 
-        let pass = this.req.body.psw;
+        let pass = this.req.body.pass;
 
         console.log(typeof(pass));
 

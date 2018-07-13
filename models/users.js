@@ -29,10 +29,10 @@ class UserModel {
 
 
 
-    register(username, email, password, fullname, cb) {
+    register(username, email, password, fullname, hash, cb) {
         if (!conn) return cb("No se ha podido crear la conexión");
-        const SQL = `INSERT INTO users (username, password, email, fullname) values
-        ('${username}', '${password}','${email}','${fullname}');`;
+        const SQL = `INSERT INTO users (username, password, email, fullname, hash) values
+        ('${username}', '${password}','${email}','${fullname}', '${hash}');`;
         conn.query(SQL, (error, rows) => {
             if (error) return cb(error);
             else return cb(rows);

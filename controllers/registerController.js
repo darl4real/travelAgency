@@ -1,7 +1,8 @@
 const Controller = require('./controller');
 const UserModel = require('../models/userModel');
+const UsModel = require('../models/users');
 const IdentService = require('../service/identService');
-const RegisterService = require('../service/secureService');
+const SecureService = require('../service/secureService');
 const EmailService = require('../service/emailService');
 class registerController extends Controller {
     constructor(req, res, next) {
@@ -25,7 +26,7 @@ class registerController extends Controller {
         // let email = this.req.body.email;
         let userModel = new UserModel();
 
-        let registerData = {...this.req.body };
+        let registerData = this.req.body;
 
 
 
@@ -36,15 +37,20 @@ class registerController extends Controller {
                 if (data.length === 0) {
                     let identService = new IdentService();
                     registerData.hash = identService.getUUIDD(3, 4);
-                    let registerService = new RegisterService();
-                    registerData.password = registerService.encryptPass(registerData.password);
-                    userModel.insertUser(registerData);
+                    let secureService = new SecureService();
+                    registerData.password = secureService.encryptPass(registerData.password);
+                    //console.log(registerData)
+                    let usModel = new UsModel();
+                    usModel.register(registerData.username, registerData.email, registerData.password, registerData.fullName, registerData.hash, (info) => {
+                        console.log(info)
+                    });
                     let emailService = new EmailService();
                     emailService.sendRegisterEmail(registerData);
                     this.res.redirect('/login');
 
                 } else {
                     this.req.flash.error = "El username o el email ya esta en uso";
+                    this.res.redirect('/register');
                 }
             })
             .catch((error) => {

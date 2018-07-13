@@ -32,13 +32,33 @@
 
 .inf {
     background-color: rgba(200, 200, 250, 0.5);
+    display: block;
     color: white;
     text-align: left;
     margin-left: 60px;
     padding: 2vh;
     border: 3px solid greenyellow;
     border-radius: 1em;
-    justify-content: responsive
+}
+
+.inf:hover:before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.inf:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.inf:hover p {
+    transform: scale(1);
+}
+
+.inf:hover {
+    box-shadow: 0 25px 30px rgba(0, 0, 0, .5);
 }
 
 .inf h2 {
@@ -50,6 +70,7 @@
     text-align: center;
     margin: 10px;
     padding: 10px;
+    justify-content: center
 }
 
 
@@ -278,5 +299,116 @@ a.text-black:hover {
     }
 }
 
+#contact {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
 
+#contact .well {
+    margin-top: 30px;
+    border-radius: 0;
+}
+
+#contact .form-control {
+    border-radius: 0;
+    border: 2px solid #1e1e1e;
+}
+
+#contact button {
+    border-radius: 0;
+    border: 2px solid #1e1e1e;
+}
+
+#contact .row {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    #contact iframe {
+        margin-bottom: 15px;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.search-text {
+    margin-top: 50px;
+    background-color: #272d33;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.search-text .input-search {
+    height: 30px;
+    width: 100%;
+    padding-left: 20px;
+    color: #333;
+}
+
+.search-text .btn-search {
+    background: #da3e44;
+    font-family: Roboto;
+    border: none;
+    color: #FFF;
+    height: 30px;
+    width: 80px;
+}
+
+.search-text h4 {
+    color: #FFF;
+    font-weight: 300;
+}
+
+footer {
+    background-color: grey;
+    padding: 30px 0px;
+}
+
+.logo {
+    color: #FFF;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.address span,
+.menu span {
+    color: #FFF;
+    font-weight: bold;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 10px 0px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.address li a,
+.menu li a {
+    color: #FFF;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.address li,
+.menu li {
+    margin: 20px 0px;
+    list-style: none;
+}
+
+.address li a:hover,
+.menu li a:hover {
+    color: #da3e44;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.address .fa {
+    color: #da3e44;
+    margin-right: 10px;
+    font-size: 14px;
 }

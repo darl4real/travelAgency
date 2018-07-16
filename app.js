@@ -28,6 +28,7 @@ let integration = require('./routes/integration');
 let regeneration = require('./routes/regeneration');
 var multer = require('./routes/multer');
 var activate = require('./routes/activate');
+var adminRouter = require('./routes/admin');
 
 
 
@@ -82,6 +83,7 @@ app.use('/integration', integration);
 app.use('/regeneration', regeneration);
 app.use('/multer', multer);
 app.use('/activate', activate);
+app.use('/admin', adminRouter);
 
 
 

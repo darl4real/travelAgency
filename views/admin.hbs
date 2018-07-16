@@ -1,0 +1,114 @@
+<div class="container-fluid">
+    <div class="row divAdmin">
+        <div class="col-3 pp">
+             <div class="botAdmin">
+                    <img class="logo" src="/img/iconoweb.png" alt="icono web"><br/>
+                   
+                    <b>GeeksHubs<br/>Travels</b>
+                    </div>
+        </div>
+        <div class="col-6">
+            <nav class="nav justify-content-center">
+                       <a class="nav-link head" href="#destinos">Destinos</a>
+                       <a class="nav-link head" href="#quienessomos">Quienes somos</a>
+                       <a class="nav-link head" href="#dondeestamos">Donde estamos</a>
+            </nav>
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+             <div class="botAdmin">
+            <b>Bienvenido al area de administracion</b><br/>
+            Desde aqui podras crear viajes o gestionar ya existentes.
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            </div>
+            <div class="col-6">
+            <table class="table">
+                <thead>
+                     <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Travel</th>
+      <th scope="col">Active</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Ahorro</th>
+      <th scope="col">URL foto</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    {{#each table}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{travel}}</td>
+      <td>  <div class="input-group-prepend">
+            <div class="input-group-text">
+            <input type="checkbox" id="{{id}}" {{#if active}} checked {{/if}}aria-label="Checkbox for following text input">
+            </div>
+            </div>
+      </td>
+      <td>{{price}}</td>
+      <td>{{ahorro}}</td>
+      <td><img class="imgAdmin" src="{{urlfoto}}" width="65px" height="65px">
+      </td>
+      <td>
+            <i onclick="eliminaFila({{id}})" class="fas fa-trash-alt"></i>   
+      </td>
+      <td>
+        <div>
+             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#recuperarContraseña">
+            <i class="far fa-edit" data-toggle="modal" onclick="miPopUpEdit({{id}}, {{travel}})"></i></div>
+            </button>
+            </div>
+        <div class="modal fade" id="recuperarContraseña" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                       <form action="/login/email" method="post">
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-unlock-alt"></i> 
+                               <div class="travel"></div>
+                               </h5>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                               </button>
+                           </div>
+                           <div class="modal-body">
+                               <label for="recuperarContraseña">Introduce tu correo</label>
+                               <input type="email" class="form-control" name="email" placeholder="Correo Electronico..." required>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                               <button type="submit" class="btn btn-primary">Enviar</button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           </div>
+        
+        </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+<div class="col-3">
+
+</div>
+        </div>
+    </div>
+    <div class="botAdmin">
+      <form action="/admin/anadir" method="post">
+    <button type="submit" class="btn btn-primary">Añadir</button>
+    </form>
+     <form action="/admin/modificar" method="post">
+    <button type="submit" class="btn btn-primary">Modificar</button>
+    </form>
+    </div>
+</div>
+    

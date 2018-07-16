@@ -1,446 +1,334 @@
-                                                                                    .navbar {
-                                                                                    background-color: rgb(0, 102, 255);
-                                                                                }
-                                                                                
-                                                                                .image {
-                                                                                    background: url("/images/myplane.jpg") no-repeat center top;
-                                                                                    background-position: center center;
-                                                                                    text-align: right;
-                                                                                    min-height: 400px;
-                                                                                    widows: 100%;
-                                                                                    background-size: cover;
-                                                                                    font-color: white
-                                                                                }
-                                                                                /*images*/
-                                                                                
-                                                                                .myplane5 {
-                                                                                    background: url("/images/myplane5.jpeg")no-repeat center top;
-                                                                                    background-position: center;
-                                                                                    text-align: center;
-                                                                                    min-height: 350px;
-                                                                                    width: 112%;
-                                                                                    background-size: cover;
-                                                                                    margin: 0px;
-                                                                                    margin-top: 20px;
-                                                                                }
-                                                                                
-                                                                                .About {
-                                                                                    padding-top: 20px;
-                                                                                }
-                                                                                
-                                                                                .inf {
-                                                                                    background-color: rgba(200, 200, 250, 0.5);
-                                                                                    display: block;
-                                                                                    color: white;
-                                                                                    text-align: left;
-                                                                                    margin-left: 60px;
-                                                                                    padding: 2vh;
-                                                                                    border: 3px solid greenyellow;
-                                                                                    border-radius: 1em;
-                                                                                }
-                                                                                
-                                                                                .inf:hover:before {
-                                                                                    width: 100%;
-                                                                                    height: 100%;
-                                                                                    opacity: 1;
-                                                                                }
-                                                                                
-                                                                                .inf:hover:after {
-                                                                                    width: 100%;
-                                                                                    height: 100%;
-                                                                                    opacity: 1;
-                                                                                }
-                                                                                
-                                                                                .inf:hover p {
-                                                                                    transform: scale(1);
-                                                                                }
-                                                                                
-                                                                                .inf:hover {
-                                                                                    box-shadow: 0 25px 30px rgba(0, 0, 0, .5);
-                                                                                }
-                                                                                
-                                                                                .inf h2 {
-                                                                                    text-decoration: none;
-                                                                                    text-decoration-color: none;
-                                                                                }
-                                                                                
-                                                                                .contacto {
-                                                                                    text-align: center;
-                                                                                    margin: 10px;
-                                                                                    padding: 10px;
-                                                                                    justify-content: center
-                                                                                }
-                                                                                /*form*/
-                                                                                
-                                                                                form {
-                                                                                    margin: 0 auto;
-                                                                                    width: 100%;
-                                                                                }
-                                                                                
-                                                                                #submit {
-                                                                                    width: 205px;
-                                                                                    height: 35px;
-                                                                                    border: none;
-                                                                                    margin-top: 20px;
-                                                                                    cursor: pointer;
-                                                                                    background: #7e0047;
-                                                                                    color: #fff;
-                                                                                }
-                                                                                /*fin form*/
-                                                                                
-                                                                                .col {
-                                                                                    background-color: white;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                
-                                                                                .custom-form-container {
-                                                                                    body {
-                                                                                        /* Workaround for some mobile browsers */
-                                                                                        min-height: 100%;
-                                                                                    }
-                                                                                    .custom-form-container {
-                                                                                        height: 100vh;
-                                                                                        /* The Magic */
-                                                                                        background-size: cover;
-                                                                                        background-image: url("/images/myplane30.jpg");
-                                                                                    }
-                                                                                    label {
-                                                                                        color: #fff;
-                                                                                    }
-                                                                                    .custom-form-container {
-                                                                                        padding: 30px 60px;
-                                                                                    }
-                                                                                    .form-horizontal,
-                                                                                    .form-group,
-                                                                                    {
-                                                                                        background: grey;
-                                                                                    }
-                                                                                }
-                                                                                
-                                                                                .container {
-                                                                                    body {
-                                                                                        background: #00bcd4;
-                                                                                    }
-                                                                                    h1 {
-                                                                                        color: #grey;
-                                                                                        margin: 40px 0 60px 0;
-                                                                                        font-weight: 300;
-                                                                                    }
-                                                                                    .our-team-main {
-                                                                                        width: 100%;
-                                                                                        height: auto;
-                                                                                        border-bottom: 5px #323233 solid;
-                                                                                        background: #fff;
-                                                                                        text-align: center;
-                                                                                        border-radius: 10px;
-                                                                                        overflow: hidden;
-                                                                                        position: relative;
-                                                                                        transition: 0.5s;
-                                                                                        margin-bottom: 28px;
-                                                                                    }
-                                                                                    .our-team-main img {
-                                                                                        border-radius: 50%;
-                                                                                        margin-bottom: 20px;
-                                                                                        width: 200px;
-                                                                                        height: 200px;
-                                                                                    }
-                                                                                    .our-team-main h3 {
-                                                                                        font-size: 20px;
-                                                                                        font-weight: 700;
-                                                                                    }
-                                                                                    .our-team-main p {
-                                                                                        margin-bottom: 0;
-                                                                                    }
-                                                                                    .team-back {
-                                                                                        width: 100%;
-                                                                                        height: auto;
-                                                                                        position: absolute;
-                                                                                        top: 0;
-                                                                                        left: 0;
-                                                                                        padding: 5px 15px 0 15px;
-                                                                                        text-align: left;
-                                                                                        background: #fff;
-                                                                                    }
-                                                                                    .team-front {
-                                                                                        width: 100%;
-                                                                                        height: auto;
-                                                                                        position: relative;
-                                                                                        z-index: 10;
-                                                                                        background: #fff;
-                                                                                        padding: 15px;
-                                                                                        bottom: 0px;
-                                                                                        transition: all 0.5s ease;
-                                                                                    }
-                                                                                    .our-team-main:hover .team-front {
-                                                                                        bottom: -200px;
-                                                                                        transition: all 0.5s ease;
-                                                                                    }
-                                                                                    .our-team-main:hover {
-                                                                                        border-color: #777;
-                                                                                        transition: 0.5s;
-                                                                                    }
-                                                                                }
-                                                                                
-                                                                                .container3 {
-                                                                                    body {
-                                                                                        font-family: 'Open Sans', sans-serif;
-                                                                                        padding-top: 10px;
-                                                                                        background-color: #f3f5f6;
-                                                                                    }
-                                                                                }
-                                                                                
-                                                                                a:focus,
-                                                                                a:hover,
-                                                                                a:active {
-                                                                                    text-decoration: none;
-                                                                                }
-                                                                                
-                                                                                .text-black {
-                                                                                    color: #333 !important;
-                                                                                }
-                                                                                
-                                                                                a.text-black:focus,
-                                                                                a.text-black:hover {
-                                                                                    color: #7b7b7b !important;
-                                                                                }
-                                                                                
-                                                                                .list {
-                                                                                    display: block;
-                                                                                    background-color: rgba(255, 255, 255, .8);
-                                                                                    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-                                                                                    border-radius: 2px;
-                                                                                    transition: all .2s ease-in-out;
-                                                                                }
-                                                                                
-                                                                                .list-header {
-                                                                                    display: block;
-                                                                                    float: left;
-                                                                                    width: 35%;
-                                                                                    overflow: hidden;
-                                                                                    position: relative;
-                                                                                    border-radius: 2px 0 0 2px;
-                                                                                }
-                                                                                
-                                                                                .list-header img {
-                                                                                    width: 100%;
-                                                                                }
-                                                                                
-                                                                                .list-header .list-header-image:after {
-                                                                                    display: block;
-                                                                                    content: '';
-                                                                                    background-color: rgba(0, 0, 0, .4);
-                                                                                    position: absolute;
-                                                                                    top: 100%;
-                                                                                    left: 100%;
-                                                                                    width: 100px;
-                                                                                    height: 100px;
-                                                                                    box-shadow: 0 0 200px 100px rgba(0, 0, 0, .58);
-                                                                                    z-index: 1;
-                                                                                    -ms-transform: rotate(45deg);
-                                                                                    -webkit-transform: rotate(45deg);
-                                                                                    transform: rotate(45deg);
-                                                                                    opacity: 0;
-                                                                                    filter: alpha(opacity=0);
-                                                                                    transition: all .8s;
-                                                                                    -moz-transition: all .8s;
-                                                                                    -webkit-transition: all .8s;
-                                                                                    -o-transition: all .8s;
-                                                                                }
-                                                                                
-                                                                                .list-content {
-                                                                                    display: block;
-                                                                                    margin-left: 35%;
-                                                                                    padding: 15px;
-                                                                                    position: relative;
-                                                                                }
-                                                                                
-                                                                                .list-meta {
-                                                                                    display: block;
-                                                                                    margin-bottom: 16px;
-                                                                                    font-size: 13px;
-                                                                                    line-height: 100%;
-                                                                                }
-                                                                                
-                                                                                .list-meta .list-meta-item {
-                                                                                    display: inline-block;
-                                                                                    margin-right: 18px;
-                                                                                    color: #9A9A9A;
-                                                                                }
-                                                                                
-                                                                                .list:after {
-                                                                                    display: block;
-                                                                                    clear: both;
-                                                                                    content: '';
-                                                                                }
-                                                                                
-                                                                                .list:hover {
-                                                                                    box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
-                                                                                }
-                                                                                
-                                                                                @media only screen and (max-width: 991px) {
-                                                                                    .list-header {
-                                                                                        display: block;
-                                                                                        width: 100%;
-                                                                                        padding: 0;
-                                                                                        border-radius: 0;
-                                                                                    }
-                                                                                    .list-content {
-                                                                                        display: block;
-                                                                                        width: 100%;
-                                                                                        margin-left: 0;
-                                                                                        padding: 15px;
-                                                                                        clear: both;
-                                                                                    }
-                                                                                }
-                                                                                
-                                                                                #contact {
-                                                                                    background-color: white;
-                                                                                    font-family: 'Roboto', sans-serif;
-                                                                                }
-                                                                                
-                                                                                #contact .well {
-                                                                                    margin-top: 30px;
-                                                                                    border-radius: 0;
-                                                                                }
-                                                                                
-                                                                                #contact .form-control {
-                                                                                    border-radius: 0;
-                                                                                    border: 2px solid #1e1e1e;
-                                                                                }
-                                                                                
-                                                                                #contact button {
-                                                                                    border-radius: 0;
-                                                                                    border: 2px solid #1e1e1e;
-                                                                                }
-                                                                                
-                                                                                #contact .row {
-                                                                                    margin-bottom: 30px;
-                                                                                }
-                                                                                
-                                                                                @media (max-width: 768px) {
-                                                                                    #contact iframe {
-                                                                                        margin-bottom: 15px;
-                                                                                    }
-                                                                                }
-                                                                                
-                                                                                body {
-                                                                                    font-family: 'Roboto', sans-serif;
-                                                                                }
-                                                                                
-                                                                                .search-text {
-                                                                                    margin-top: 50px;
-                                                                                    background-color: #272d33;
-                                                                                    padding-top: 60px;
-                                                                                    padding-bottom: 60px;
-                                                                                }
-                                                                                
-                                                                                .search-text .input-search {
-                                                                                    height: 30px;
-                                                                                    width: 100%;
-                                                                                    padding-left: 20px;
-                                                                                    color: #333;
-                                                                                }
-                                                                                
-                                                                                .search-text .btn-search {
-                                                                                    background: #da3e44;
-                                                                                    font-family: Roboto;
-                                                                                    border: none;
-                                                                                    color: #FFF;
-                                                                                    height: 30px;
-                                                                                    width: 80px;
-                                                                                }
-                                                                                
-                                                                                .search-text h4 {
-                                                                                    color: #FFF;
-                                                                                    font-weight: 300;
-                                                                                }
-                                                                                
-                                                                                footer {
-                                                                                    background-color: grey;
-                                                                                    padding: 30px 0px;
-                                                                                }
-                                                                                
-                                                                                .logo {
-                                                                                    color: #FFF;
-                                                                                    font-weight: 300;
-                                                                                    font-size: 30px;
-                                                                                }
-                                                                                
-                                                                                .address span,
-                                                                                .menu span {
-                                                                                    color: #FFF;
-                                                                                    font-weight: bold;
-                                                                                    border-bottom: 1px solid #c7c7c7;
-                                                                                    padding: 10px 0px;
-                                                                                    display: block;
-                                                                                    text-transform: uppercase;
-                                                                                    font-size: 16px;
-                                                                                    letter-spacing: 3px;
-                                                                                }
-                                                                                
-                                                                                .address li a,
-                                                                                .menu li a {
-                                                                                    color: #FFF;
-                                                                                    letter-spacing: 3px;
-                                                                                    text-decoration: none;
-                                                                                    font-size: 14px;
-                                                                                }
-                                                                                
-                                                                                .address li,
-                                                                                .menu li {
-                                                                                    margin: 20px 0px;
-                                                                                    list-style: none;
-                                                                                }
-                                                                                
-                                                                                .address li a:hover,
-                                                                                .menu li a:hover {
-                                                                                    color: #da3e44;
-                                                                                    -webkit-transition: all 1s ease-in-out;
-                                                                                    -moz-transition: all 1s ease-in-out;
-                                                                                    -o-transition: all 1s ease-in-out;
-                                                                                    transition: all 1s ease-in-out;
-                                                                                }
-                                                                                
-                                                                                .address .fa {
-                                                                                    color: #da3e44;
-                                                                                    margin-right: 10px;
-                                                                                    font-size: 14px;
-                                                                                }
-                                                                                
-                                                                                .container 4 {
-                                                                                    margin: 26px;
-                                                                                    border-radius: 4px;
-                                                                                    padding: 20px;
-                                                                                }
-                                                                                
-                                                                                .descuento {
-                                                                                    background-color: #c03939;
-                                                                                    padding-left: 0;
-                                                                                    text-align: center;
-                                                                                    margin-top: -5px;
-                                                                                    color: #ffff;
-                                                                                    font-size: 1em;
-                                                                                }
-                                                                                
-                                                                                .header-text h3 span {
-                                                                                    position: absolute;
-                                                                                    top: -250px;
-                                                                                    left: 15px;
-                                                                                }
-                                                                                
-                                                                                .precio {
-                                                                                    background-color: #3f408a;
-                                                                                    padding-right: inherit;
-                                                                                    text-align: center;
-                                                                                    margin-left: inherit;
-                                                                                    margin-top: -5px;
-                                                                                    color: white;
-                                                                                    font-size: 1em;
-                                                                                }
-                                                                                
-                                                                                img {
-                                                                                    margin: 0;
-                                                                                    width: inherit;
-                                                                                    height: 250px;
-                                                                                    border-radius: 4px;
-                                                                                    border-color: black;
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(0, 102, 255);
+    width: 100%;
+}
+
+.image {
+    background: url("/images/myplane.jpg") no-repeat center top;
+    background-position: center center;
+    text-align: right;
+    min-height: 400px;
+    widows: 100%;
+    background-size: cover;
+    font-color: white
+}
+
+.myplane5 {
+    background: url("/images/myplane5.jpeg")no-repeat center top;
+    background-position: center;
+    text-align: center;
+    min-height: 350px;
+    width: 112%;
+    background-size: cover;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.About {
+    padding-top: 20px;
+}
+
+.inf {
+    background-color: rgba(200, 200, 250, 0.5);
+    display: block;
+    color: white;
+    text-align: left;
+    margin-left: 60px;
+    padding: 2vh;
+    border: 3px solid greenyellow;
+    border-radius: 1em;
+}
+
+.inf:hover:before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.inf:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.inf:hover p {
+    transform: scale(1);
+}
+
+.inf:hover {
+    box-shadow: 0 25px 30px rgba(0, 0, 0, .5);
+}
+
+.inf h2 {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+.contacto {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center
+}
+
+
+/*form*/
+
+form {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#submit {
+    width: 205px;
+    height: 35px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #7e0047;
+    color: #fff;
+}
+
+
+/*fin form*/
+
+.col {
+    background-color: white;
+    text-align: center;
+}
+
+.custom-form-container {
+    body {
+        /* Workaround for some mobile browsers */
+        min-height: 100%;
+    }
+    .custom-form-container {
+        height: 100vh;
+        /* The Magic */
+        background-size: cover;
+        background-image: url("/images/myplane30.jpg");
+    }
+    label {
+        color: #fff;
+    }
+    .custom-form-container {
+        padding: 30px 60px;
+    }
+    .form-horizontal,
+    .form-group,
+    {
+        background: grey;
+    }
+}
+
+.container {
+    body {
+        background: #00bcd4;
+    }
+    h1 {
+        color: #grey;
+        margin: 40px 0 60px 0;
+        font-weight: 300;
+    }
+    .our-team-main {
+        width: 100%;
+        height: auto;
+        border-bottom: 5px #323233 solid;
+        background: #fff;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s;
+        margin-bottom: 28px;
+    }
+    .our-team-main img {
+        border-radius: 50%;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .our-team-main h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .our-team-main p {
+        margin-bottom: 0;
+    }
+    .team-back {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 15px 0 15px;
+        text-align: left;
+        background: #fff;
+    }
+    .team-front {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 10;
+        background: #fff;
+        padding: 15px;
+        bottom: 0px;
+        transition: all 0.5s ease;
+    }
+    .our-team-main:hover .team-front {
+        bottom: -200px;
+        transition: all 0.5s ease;
+    }
+    .our-team-main:hover {
+        border-color: #777;
+        transition: 0.5s;
+    }
+}
+
+.container 4 {
+    / *margin: 26px;
+    */ border-radius: 4px;
+    padding: 20px;
+}
+
+.descuento {
+    background-color: #c03939;
+    padding-left: 0;
+    text-align: center;
+    margin-top: -5px;
+    color: #ffff;
+    font-size: 1em;
+}
+
+.header-text h3 span {
+    position: absolute;
+    top: -250px;
+    left: 15px;
+}
+
+.precio {
+    background-color: #3f408a;
+    padding-right: inherit;
+    text-align: center;
+    margin-left: inherit;
+    margin-top: -5px;
+    color: white;
+    font-size: 1em;
+}
+
+img {
+    margin: 0;
+    width: inherit;
+    height: 250px;
+    border-radius: 4px;
+    border-color: black;
+}
+
+footer {
+    font-family: 'Raleway', sans-serif;
+}
+
+.search-text {
+    padding-bottom: 60px;
+}
+
+.search-text .input-search {
+    height: 45px;
+    width: 40%;
+    padding-left: 20px;
+    color: #333;
+}
+
+.search-text .btn-search {
+    background: #545454;
+    font-family: Roboto;
+    border: none;
+    color: #FFF;
+    height: 45px;
+    width: 80px;
+}
+
+.search-text h4 {
+    color: #888582;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #222222;
+    padding: 60px 0px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    padding-top: 50px;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer ul li a {
+    color: #b1aca1;
+    padding: 20px;
+}
+
+footer ul li a:hover {
+    color: #7dabdb;
+    text-decoration: none;
+}
+
+.footer-top {
+    padding-bottom: 50px;
+}
+
+.footer-top .fa {
+    font-size: 18px;
+    color: #FFF;
+    padding-right: 10px;
+}
+
+.footer-top a {
+    color: #FFF;
+    background: #333333;
+    padding: 10px;
+}
+
+.footer-top .col-lg-2:hover .fa,
+.footer-top .col-lg-2:hover a {
+    color: #7dabdb;
+    text-decoration: none;
+}
+
+.copyright {
+    background-color: #f0f0f0;
+}
+
+.copyright p {
+    font-size: 12px;
+    padding: 15px 0 10px 0;
+}
+
+#top {
+    color: #fff;
+    background: #7dabdb;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    position: fixed;
+    border-radius: 3px;
+    text-align: center;
+    bottom: 350px;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+}

@@ -67,34 +67,6 @@
     text-decoration-color: none;
 }
 
-.contacto {
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    justify-content: center
-}
-
-
-/*form*/
-
-form {
-    margin: 0 auto;
-    width: 100%;
-}
-
-#submit {
-    width: 205px;
-    height: 35px;
-    border: none;
-    margin-top: 20px;
-    cursor: pointer;
-    background: #7e0047;
-    color: #fff;
-}
-
-
-/*fin form*/
-
 .col {
     background-color: white;
     text-align: center;
@@ -104,6 +76,7 @@ form {
     body {
         /* Workaround for some mobile browsers */
         min-height: 100%;
+        min width: 20vw
     }
     .custom-form-container {
         height: 100vh;
@@ -195,7 +168,7 @@ form {
 }
 
 .descuento {
-    background-color: #c03939;
+    background-color: skyblue;
     padding-left: 0;
     text-align: center;
     margin-top: -5px;
@@ -210,7 +183,7 @@ form {
 }
 
 .precio {
-    background-color: #3f408a;
+    background-color: tomato;
     padding-right: inherit;
     text-align: center;
     margin-left: inherit;
@@ -273,7 +246,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #b1aca1;
+    color: black;
     padding: 20px;
 }
 
@@ -294,7 +267,7 @@ footer ul li a:hover {
 
 .footer-top a {
     color: #FFF;
-    background: #333333;
+    background: #333333!important;
     padding: 10px;
 }
 
